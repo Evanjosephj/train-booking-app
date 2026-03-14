@@ -1,0 +1,466 @@
+
+### 
+POST http://localhost:3000/trains
+Content-Type: application/json 
+
+[
+{
+"trainNumber":"12001",
+"trainName":"Hyderabad Express",
+"type":"express",
+"class":[
+{"classType":"sleeper","totalSeats":200,"availableSeats":150,"farePerKm":1.2},
+{"classType":"AC3","totalSeats":120,"availableSeats":80,"farePerKm":2.5}
+],
+"source":"Hyderabad",
+"destination":"Vijayawada",
+"stops":[
+{"stationName":"Nalgonda","arrivalTime":"11:30 AM","departureTime":"11:35 AM","distance":100},
+{"stationName":"Miryalaguda","arrivalTime":"12:20 PM","departureTime":"12:25 PM","distance":150}
+],
+"departureTime":"10:00 AM",
+"arrivalTime":"03:00 PM",
+"duration":"5h",
+"runningDays":["Mon","Tue","Wed","Thu","Fri"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12002",
+"trainName":"Telangana Intercity",
+"type":"intercity",
+"class":[
+{"classType":"AC2","totalSeats":100,"availableSeats":60,"farePerKm":3}
+],
+"source":"Hyderabad",
+"destination":"Warangal",
+"stops":[
+{"stationName":"Kazipet","arrivalTime":"09:30 AM","departureTime":"09:35 AM","distance":120}
+],
+"departureTime":"07:00 AM",
+"arrivalTime":"10:00 AM",
+"duration":"3h",
+"runningDays":["Mon","Wed","Fri"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12003",
+"trainName":"Godavari Superfast",
+"type":"superfast",
+"class":[
+{"classType":"AC1","totalSeats":40,"availableSeats":20,"farePerKm":5},
+{"classType":"AC2","totalSeats":80,"availableSeats":50,"farePerKm":3.5}
+],
+"source":"Hyderabad",
+"destination":"Visakhapatnam",
+"stops":[
+{"stationName":"Vijayawada","arrivalTime":"02:00 PM","departureTime":"02:15 PM","distance":280},
+{"stationName":"Rajahmundry","arrivalTime":"04:30 PM","departureTime":"04:35 PM","distance":420}
+],
+"departureTime":"09:00 AM",
+"arrivalTime":"08:00 PM",
+"duration":"11h",
+"runningDays":["Tue","Thu","Sat"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12004",
+"trainName":"Andhra Local",
+"type":"local",
+"class":[
+{"classType":"low","totalSeats":300,"availableSeats":200,"farePerKm":0.8}
+],
+"source":"Vijayawada",
+"destination":"Guntur",
+"stops":[
+{"stationName":"Mangalagiri","arrivalTime":"08:20 AM","departureTime":"08:25 AM","distance":20}
+],
+"departureTime":"08:00 AM",
+"arrivalTime":"09:00 AM",
+"duration":"1h",
+"runningDays":["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12005",
+"trainName":"Rayalaseema Express",
+"type":"express",
+"class":[
+{"classType":"sleeper","totalSeats":250,"availableSeats":140,"farePerKm":1.5},
+{"classType":"AC3","totalSeats":150,"availableSeats":90,"farePerKm":2.8}
+],
+"source":"Hyderabad",
+"destination":"Tirupati",
+"stops":[
+{"stationName":"Kurnool","arrivalTime":"01:30 PM","departureTime":"01:40 PM","distance":220},
+{"stationName":"Kadapa","arrivalTime":"04:30 PM","departureTime":"04:35 PM","distance":400}
+],
+"departureTime":"09:30 AM",
+"arrivalTime":"08:00 PM",
+"duration":"10h 30m",
+"runningDays":["Mon","Tue","Thu","Sat"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12006",
+"trainName":"Deccan Fast",
+"type":"superfast",
+"class":[
+{"classType":"AC2","totalSeats":90,"availableSeats":50,"farePerKm":3}
+],
+"source":"Hyderabad",
+"destination":"Bangalore",
+"stops":[
+{"stationName":"Anantapur","arrivalTime":"03:00 PM","departureTime":"03:05 PM","distance":350}
+],
+"departureTime":"10:00 AM",
+"arrivalTime":"09:00 PM",
+"duration":"11h",
+"runningDays":["Mon","Wed","Fri"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12007",
+"trainName":"Coastal Express",
+"type":"express",
+"class":[
+{"classType":"sleeper","totalSeats":220,"availableSeats":160,"farePerKm":1.3},
+{"classType":"AC3","totalSeats":130,"availableSeats":90,"farePerKm":2.5}
+],
+"source":"Visakhapatnam",
+"destination":"Chennai",
+"stops":[
+{"stationName":"Rajahmundry","arrivalTime":"10:30 AM","departureTime":"10:35 AM","distance":200},
+{"stationName":"Vijayawada","arrivalTime":"01:00 PM","departureTime":"01:10 PM","distance":350}
+],
+"departureTime":"07:00 AM",
+"arrivalTime":"09:00 PM",
+"duration":"14h",
+"runningDays":["Tue","Thu","Sat"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12008",
+"trainName":"Krishna Intercity",
+"type":"intercity",
+"class":[
+{"classType":"middle","totalSeats":180,"availableSeats":110,"farePerKm":1}
+],
+"source":"Vijayawada",
+"destination":"Hyderabad",
+"stops":[
+{"stationName":"Khammam","arrivalTime":"11:30 AM","departureTime":"11:35 AM","distance":200}
+],
+"departureTime":"09:00 AM",
+"arrivalTime":"02:00 PM",
+"duration":"5h",
+"runningDays":["Mon","Tue","Wed","Thu","Fri"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12009",
+"trainName":"Southern Express",
+"type":"express",
+"class":[
+{"classType":"AC3","totalSeats":140,"availableSeats":100,"farePerKm":2.4}
+],
+"source":"Chennai",
+"destination":"Bangalore",
+"stops":[
+{"stationName":"Katpadi","arrivalTime":"09:30 AM","departureTime":"09:35 AM","distance":130}
+],
+"departureTime":"07:00 AM",
+"arrivalTime":"12:00 PM",
+"duration":"5h",
+"runningDays":["Mon","Wed","Fri"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12010",
+"trainName":"Nagarjuna Express",
+"type":"superfast",
+"class":[
+{"classType":"AC2","totalSeats":80,"availableSeats":40,"farePerKm":3}
+],
+"source":"Hyderabad",
+"destination":"Chennai",
+"stops":[
+{"stationName":"Guntur","arrivalTime":"02:30 PM","departureTime":"02:40 PM","distance":320}
+],
+"departureTime":"09:00 AM",
+"arrivalTime":"07:00 PM",
+"duration":"10h",
+"runningDays":["Tue","Thu","Sat"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12011",
+"trainName":"Warangal Passenger",
+"type":"local",
+"class":[
+{"classType":"low","totalSeats":300,"availableSeats":200,"farePerKm":0.8}
+],
+"source":"Hyderabad",
+"destination":"Warangal",
+"stops":[
+{"stationName":"Aler","arrivalTime":"09:00 AM","departureTime":"09:05 AM","distance":80}
+],
+"departureTime":"07:30 AM",
+"arrivalTime":"11:30 AM",
+"duration":"4h",
+"runningDays":["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12012",
+"trainName":"East Coast Express",
+"type":"express",
+"class":[
+{"classType":"AC3","totalSeats":140,"availableSeats":100,"farePerKm":2.4}
+],
+"source":"Visakhapatnam",
+"destination":"Kolkata",
+"stops":[
+{"stationName":"Bhubaneswar","arrivalTime":"04:30 PM","departureTime":"04:40 PM","distance":500}
+],
+"departureTime":"09:00 AM",
+"arrivalTime":"08:00 AM",
+"duration":"23h",
+"runningDays":["Mon","Wed","Sat"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12013",
+"trainName":"Andhra Superfast",
+"type":"superfast",
+"class":[
+{"classType":"AC2","totalSeats":70,"availableSeats":40,"farePerKm":3}
+],
+"source":"Tirupati",
+"destination":"Hyderabad",
+"stops":[
+{"stationName":"Kadapa","arrivalTime":"01:00 PM","departureTime":"01:05 PM","distance":150}
+],
+"departureTime":"10:00 AM",
+"arrivalTime":"08:00 PM",
+"duration":"10h",
+"runningDays":["Tue","Fri"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12014",
+"trainName":"City Local",
+"type":"local",
+"class":[
+{"classType":"low","totalSeats":400,"availableSeats":300,"farePerKm":0.7}
+],
+"source":"Secunderabad",
+"destination":"Lingampally",
+"stops":[
+{"stationName":"Begumpet","arrivalTime":"08:10 AM","departureTime":"08:12 AM","distance":5}
+],
+"departureTime":"08:00 AM",
+"arrivalTime":"09:00 AM",
+"duration":"1h",
+"runningDays":["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12015",
+"trainName":"Capital Express",
+"type":"express",
+"class":[
+{"classType":"AC3","totalSeats":120,"availableSeats":80,"farePerKm":2.5}
+],
+"source":"Delhi",
+"destination":"Hyderabad",
+"stops":[
+{"stationName":"Nagpur","arrivalTime":"05:00 AM","departureTime":"05:10 AM","distance":850}
+],
+"departureTime":"06:00 AM",
+"arrivalTime":"10:00 PM",
+"duration":"16h",
+"runningDays":["Mon","Thu","Sat"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12016",
+"trainName":"Eastern Link",
+"type":"intercity",
+"class":[
+{"classType":"middle","totalSeats":160,"availableSeats":120,"farePerKm":1.1}
+],
+"source":"Vijayawada",
+"destination":"Rajahmundry",
+"stops":[
+{"stationName":"Eluru","arrivalTime":"10:30 AM","departureTime":"10:35 AM","distance":60}
+],
+"departureTime":"09:00 AM",
+"arrivalTime":"12:30 PM",
+"duration":"3h 30m",
+"runningDays":["Mon","Tue","Wed","Thu","Fri"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12017",
+"trainName":"Southern Link",
+"type":"express",
+"class":[
+{"classType":"sleeper","totalSeats":200,"availableSeats":130,"farePerKm":1.3}
+],
+"source":"Bangalore",
+"destination":"Chennai",
+"stops":[
+{"stationName":"Krishnagiri","arrivalTime":"09:30 AM","departureTime":"09:35 AM","distance":90}
+],
+"departureTime":"07:00 AM",
+"arrivalTime":"01:00 PM",
+"duration":"6h",
+"runningDays":["Tue","Thu","Sat"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12018",
+"trainName":"Deccan Local",
+"type":"local",
+"class":[
+{"classType":"low","totalSeats":350,"availableSeats":250,"farePerKm":0.7}
+],
+"source":"Hyderabad",
+"destination":"Nalgonda",
+"stops":[
+{"stationName":"Choutuppal","arrivalTime":"09:00 AM","departureTime":"09:05 AM","distance":60}
+],
+"departureTime":"07:30 AM",
+"arrivalTime":"11:00 AM",
+"duration":"3h 30m",
+"runningDays":["Mon","Tue","Wed","Thu","Fri","Sat"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12019",
+"trainName":"Andhra Mail",
+"type":"express",
+"class":[
+{"classType":"AC2","totalSeats":80,"availableSeats":45,"farePerKm":3}
+],
+"source":"Chennai",
+"destination":"Hyderabad",
+"stops":[
+{"stationName":"Nellore","arrivalTime":"09:30 AM","departureTime":"09:35 AM","distance":180}
+],
+"departureTime":"06:00 AM",
+"arrivalTime":"07:00 PM",
+"duration":"13h",
+"runningDays":["Mon","Wed","Fri"],
+"status":"on-time",
+"isActive":true
+},
+
+{
+"trainNumber":"12020",
+"trainName":"Godavari Passenger",
+"type":"local",
+"class":[
+{"classType":"low","totalSeats":300,"availableSeats":200,"farePerKm":0.8}
+],
+"source":"Rajahmundry",
+"destination":"Visakhapatnam",
+"stops":[
+{"stationName":"Samalkot","arrivalTime":"08:30 AM","departureTime":"08:35 AM","distance":40}
+],
+"departureTime":"07:00 AM",
+"arrivalTime":"11:00 AM",
+"duration":"4h",
+"runningDays":["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+"status":"on-time",
+"isActive":true
+}
+]
+
+
+### 1. అన్ని trains
+GET http://localhost:5000/trains
+
+### 2. Search (అన్నీ ఇందులోనే!)
+GET http://localhost:3000/trains/search?day=mon
+
+
+### 3. Train Number తో
+GET http://localhost:3000/trains/search?trainnumber=12001
+
+### 4. Update
+PUT http://localhost:3000/trains/number/:trainNumber
+
+### 5. Delete
+DELETE http://localhost:3000/trains/:id 
+
+###  register
+POST http://localhost:5000/user/register 
+Content-Type: application/json 
+
+{
+    "name":"test case two",
+    "email":"testtwo@gmail.com",
+    "password":"123456",
+    "phoneNumber": "9999999999"
+}
+
+### Login
+POST http://localhost:5000/user/login 
+Content-Type: application/json 
+
+{
+    "email": "test@gmail.com",
+    "password": "123456"
+}
+
+### Login
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "123456"
+}
+
+### trains 
+GET http://localhost:5000/trains 
+
+### 
+GET http://localhost:5000/
